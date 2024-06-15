@@ -32,14 +32,14 @@
     <body>
       <?php
       	require 'navbar.php';
-        if (isset($_POST['redirect_to_gymkhana'])){
-          header("Location:temp5.php");
+        // if (isset($_POST['redirect_to_gymkhana'])){
+        //   header("Location:temp5.php");
         //   session_unset();
         // 	session_destroy();
         // 	// Redirect to main page
         // 	header("Location: https://gymkhana.iitb.ac.in/profiles/user");
         // 	exit();
-        }
+        // }
       ?>
 
       <div class="container pt-5">

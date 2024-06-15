@@ -108,7 +108,7 @@ session_start();
 
 
 
-<!-- <?php
+<?php
 if (isset($_GET['signupsuccess']) && $_GET['signupsuccess'] == "true") {
     echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
             Signup successful! Please log in.
@@ -129,7 +129,7 @@ if (isset($_GET['loginsuccess']) && $_GET['loginsuccess'] == "false") {
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>';
 }
-?> -->
+?>
 
 
     <!--Display logged out successfully message

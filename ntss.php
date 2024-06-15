@@ -184,7 +184,7 @@ if(!isset($_SESSION))
                                 style="background-color:  #ff3f81; border-color:  #ff3f81">
                                 Details
                             </button>
-                            <?php if(isset($_SESSION['ldap'])){ ?>
+                            <?php if(isset($_SESSION['loggedin'])){ ?>
                             <form action="temp3.php" method="POST" type="submit">
                                 <button type="submit" class="btn btn-primary"
                                     style="background-color:  #ff3f81; border-color:  #ff3f81">

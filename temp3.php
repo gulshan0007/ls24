@@ -1,24 +1,29 @@
 <?php
 session_start();
 require 'functions.php';
-if (!isset($_SESSION['ldap'])) {
-  header("Location: index.php");
-  exit();
+
+// Check if the user is logged in
+if (!isset($_SESSION['loggedin'])) {
+    header("Location: index.php");
+    exit();
 }
-if (isset($_SESSION['ldap']) && (!isset($_SESSION['gmail']) || !$_SESSION['phno'])) {
-  header("Location: fill_details.php");
-  exit();
+
+// Check if the required POST parameters are set
+if (isset($_POST['cname'], $_POST['code'])) {
+    $user_email = $_SESSION['user_email'];
+    $user_gmail = $_SESSION['user_gmail'];
+    $course_name = $_POST['cname'];
+    $course_code = $_POST['code'];
+
+    // Add the course to the cart
+    addToCart($user_email, $user_gmail, $course_name, $course_code);
+
+    // Redirect to the cart page
+    header("Location: cart.php");
+    exit();
+} else {
+    // Redirect to the appropriate page if the parameters are not set
+    header("Location: fill_details.php");
+    exit();
 }
-//  if(array_key_exists('remove_from_cart_'.$course_code, $_POST)) {
-//    removeFromReg($_GET['code'], $_GET['ldap']);
-addToCart(
-  $_SESSION['name'], $_SESSION['ldap'], $_SESSION['rollno'],
-  $_SESSION['email'], $_SESSION['gmail'], $_SESSION['phno'],
-  $_POST['cname'], $_POST['code']
-);
-//  // echo "<script type='text/javascript'>window.location.reload()</script>";
-//  echo "hi";
-// header("Location: registrations.php");
-//  // header('Location: '.$_SERVER['REQUEST_URI']);
-//  }
 ?>

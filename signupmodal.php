@@ -11,7 +11,7 @@
                     <form action="_handelsignup.php" method="post">
                         <div class="mb-3 ">
                             <label for="signupemail" class="form-label">Email</label>
-                            <input type="email" maxlength="16" class="form-control" id="signupemail" name="signupemail" aria-describedby="emailHelp" required>
+                            <input type="email" maxlength="25" class="form-control" id="signupemail" name="signupemail" aria-describedby="emailHelp" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>

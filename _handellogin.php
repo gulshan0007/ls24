@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       
     //  validate user email 
-    $sql="SELECT * FROM `users` WHERE signup_email='$email'";
+    $sql="SELECT * FROM `learnerspace_2023_reg` WHERE user_email='$email'";
     $result=mysqli_query($conn ,$sql);
     $numRows=mysqli_num_rows($result);
     if($numRows == 1){
@@ -14,8 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        if(password_verify($password,$row['password'])){
            session_start();
            $_SESSION['loggedin']=true;
-           $_SESSION['sno']=$row['sno'];
+           $_SESSION['id']=$row['id'];
            $_SESSION['user_email']=$email;
+           $_SESSION['user_gmail']=$email;
            echo "loged in".$email;
        }
        header ("location: /Learners_Space24/index.php");
