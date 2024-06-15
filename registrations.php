@@ -1,13 +1,10 @@
 <?php 
 	session_start();
-	if (!isset($_SESSION['ldap'])){
+	if (!isset($_SESSION['loggedin'])){
 		header("Location: index.php");
 		exit();
 	}
-	if (isset($_SESSION['ldap']) && (!isset($_SESSION['gmail']) || !$_SESSION['phno'])) {
-		header("Location: fill_details.php");
-		exit();
-	}
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,11 +30,11 @@
         require 'functions.php';
 
         // LDAP of the user
-        $user_ldap = $_SESSION['ldap'];
+        $user_email = $_SESSION['ldap'];
 
         // Register all logic
         if(array_key_exists('register_all', $_POST)) {
-                registerAll($user_ldap);
+                registerAll($user_email);
          
                            
                          
@@ -54,12 +51,12 @@
 
         $select_query = "
     		SELECT * FROM learnerspace_2024_reg
-    		WHERE user_ldap = '$user_ldap'
+    		WHERE user_email = '$user_email'
     		";
 
         $count_query = "
         SELECT COUNT(*) FROM learnerspace_2024_reg
-        WHERE user_ldap = '$user_ldap'
+        WHERE user_email = '$user_email'
         ";
 
     		$result = mysqli_query($conn, $select_query);
@@ -80,14 +77,14 @@
             </div>
         </div>
 
-        <?php
+        <!-- <?php
 	        if (isset($_GET['message'])){
 	      		$message = $_GET['message'];
 	      		if ($message == 'reg_all'){
 	      			echo '<p class="text-center my-5"><i class="alert alert-warning">Registration successful</i></p>';
 	      		}
 	      	}
-      	?>
+      	?> -->
 
         <div class="container mt-5">
     		<?php if (mysqli_num_rows($result) > 0) { ?>
@@ -103,7 +100,7 @@
                   </div>
 
                   <div class="d-inline-block float-right">
-                    <form method="POST" action="temp2.php?code=<?php echo $course_code; ?>&ldap=<?php echo $user_ldap; ?>" class="my-md-0 my-2">
+                    <form method="POST" action="temp2.php?code=<?php echo $course_code; ?>&ldap=<?php echo $user_email; ?>" class="my-md-0 my-2">
                        <small class="badge badge-light badge-pill font-weight-normal">
 	                       
                        </small>
