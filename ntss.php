@@ -154,7 +154,7 @@ if(!isset($_SESSION))
 
     <?php
         include 'config/dbconnect.php';
-        $query = "SELECT * FROM learnerspace2023_courses WHERE course_type='NTSS'";
+        $query = "SELECT * FROM learnerspace2024_courses WHERE course_type='NTSS'";
         if($result = mysqli_query($conn, $query))
         {
         ?>
@@ -206,7 +206,7 @@ if(!isset($_SESSION))
 
 
     <?php
-    $query = "SELECT * FROM learnerspace2023_courses WHERE course_type='NTSS'";
+    $query = "SELECT * FROM learnerspace2024_courses WHERE course_type='NTSS'";
         if($result = mysqli_query($conn, $query))
         {
                 while($row = mysqli_fetch_array($result))

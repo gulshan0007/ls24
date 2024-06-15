@@ -53,12 +53,12 @@
         }
 
         $select_query = "
-    		SELECT * FROM learnerspace_2023_reg
+    		SELECT * FROM learnerspace_2024_reg
     		WHERE user_ldap = '$user_ldap'
     		";
 
         $count_query = "
-        SELECT COUNT(*) FROM learnerspace_2023_reg
+        SELECT COUNT(*) FROM learnerspace_2024_reg
         WHERE user_ldap = '$user_ldap'
         ";
 

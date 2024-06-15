@@ -40,7 +40,7 @@
 
         <?php  
         include 'config/dbconnect.php';
-        $query = "SELECT * FROM learnerspace_2023_contact WHERE club='".$_GET["club"]."'";
+        $query = "SELECT * FROM learnerspace_2024_contact WHERE club='".$_GET["club"]."'";
         $result = mysqli_query($conn, $query);
         ?>
 

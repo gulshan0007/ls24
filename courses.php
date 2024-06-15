@@ -64,7 +64,7 @@
 
                 include 'config/dbconnect.php';
 
-                $query = "SELECT * FROM learnerspace2023_courses WHERE category='NTSS'";
+                $query = "SELECT * FROM learnerspace2024_courses WHERE category='NTSS'";
                 if ($result = mysqli_query($conn, $query)) {
                     ?>
                             <section id="courses" class="courses">
@@ -123,7 +123,7 @@
 
                 include 'config/dbconnect.php';
 
-                $query = "SELECT * FROM learnerspace2023_courses WHERE category='TSS'";
+                $query = "SELECT * FROM learnerspace2024_courses WHERE category='TSS'";
                 if ($result = mysqli_query($conn, $query)) {
                     ?>
                                 <section id="courses" class="courses">

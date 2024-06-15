@@ -47,7 +47,7 @@
             // $conn_error = 'could not connect';
             // $conn = mysqli_connect('localhost', 'ugacademics', 'ug_acads', 'ugacademics') or die($conn_error);
             include 'config/dbconnect.php';
-            $query = "SELECT * FROM learnerspace2023_courses WHERE course_code=".$_GET['course_code']."";
+            $query = "SELECT * FROM learnerspace2024_courses WHERE course_code=".$_GET['course_code']."";
             $result = @mysqli_query($conn, $query);
             $row = @mysqli_fetch_array($result);
 

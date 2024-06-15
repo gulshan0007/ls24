@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       
     //  validate user email 
-    $sql="SELECT * FROM `learnerspace_2023_reg` WHERE user_email='$email'";
+    $sql="SELECT * FROM `learnerspace_2024_reg` WHERE user_email='$email'";
     $result=mysqli_query($conn ,$sql);
     $numRows=mysqli_num_rows($result);
     if($numRows == 1){

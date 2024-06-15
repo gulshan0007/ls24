@@ -13,7 +13,7 @@
 	
 		// Check for duplicate insertion
 		$check_query_1 = "
-		SELECT * FROM learnerspace_2023_cart
+		SELECT * FROM learnerspace_2024_cart
 		WHERE (user_email = '$user_email' AND course_code = '$course_code')
 		";
 	
@@ -21,7 +21,7 @@
 	
 		// Check for duplicate registration
 		$check_query_2 = "
-		SELECT * FROM learnerspace_2023_reg
+		SELECT * FROM learnerspace_2024_reg
 		WHERE (user_email = '$user_email' AND course_code = '$course_code')
 		";
 	
@@ -40,7 +40,7 @@
 	
 			// Query to insert data into the DB
 			$insert_query = "
-			INSERT INTO learnerspace_2023_cart
+			INSERT INTO learnerspace_2024_cart
 			(user_email, user_gmail, course_name, course_code)
 			VALUES ('$user_email', '$user_gmail', '$course_name', '$course_code')
 			";
@@ -68,7 +68,7 @@
 		}
 
 		$select_query = "
-		SELECT course_name FROM learnerspace_2023_cart
+		SELECT course_name FROM learnerspace_2024_cart
 		WHERE user_email = '$user_email'
 		";
 
@@ -98,7 +98,7 @@
 		}
 
 		$delete_query = "
-		DELETE FROM learnerspace_2023_cart
+		DELETE FROM learnerspace_2024_cart
 		WHERE course_code = '$course_code' AND user_email = '$user_email'
 		";
 
@@ -125,7 +125,7 @@
 		}
 
 		$delete_query = "
-		DELETE FROM learnerspace_2023_reg
+		DELETE FROM learnerspace_2024_reg
 		WHERE course_code = '$course_code' AND user_email = '$user_email'
 		";
 
@@ -154,7 +154,7 @@
 
 		// Check whether user has already added that course to cart, if yes, delete that from cart
 		$check_query_1 = "
-		SELECT * FROM learnerspace_2023_cart
+		SELECT * FROM learnerspace_2024_cart
 		WHERE (user_email = '$user_email' AND course_code = '$course_code')
 		";
 
@@ -162,7 +162,7 @@
 
 		// Check for duplicate registration
 		$check_query_2 = "
-		SELECT * FROM learnerspace_2023_reg
+		SELECT * FROM learnerspace_2024_reg
 		WHERE (user_email = '$user_email' AND course_code = '$course_code')
 		";
 
@@ -180,7 +180,7 @@
 			}
 			// Query to insert data into the DB
 			$insert_query = "
-			INSERT INTO learnerspace_2023_reg
+			INSERT INTO learnerspace_2024_reg
 			( user_email, user_gmail, course_name, course_code)
 			VALUES ('$user_email', '$user_gmail', '$course_name', '$course_code')
 			";
@@ -213,8 +213,8 @@
 		try {
 			// Copy all data from cart to reg table, including course_code and course_name
 			$copy_query = "
-				INSERT INTO learnerspace_2023_reg1 (user_email, user_gmail, course_name, course_code)
-				SELECT user_email, user_gmail, course_name, course_code FROM learnerspace_2023_cart WHERE user_email = '$user_email'
+				INSERT INTO learnerspace_2024_reg1 (user_email, user_gmail, course_name, course_code)
+				SELECT user_email, user_gmail, course_name, course_code FROM learnerspace_2024_cart WHERE user_email = '$user_email'
 			";
 	
 			if (!mysqli_query($conn, $copy_query)) {
@@ -223,7 +223,7 @@
 	
 			// Empty the cart
 			$delete_query = "
-				DELETE FROM learnerspace_2023_cart
+				DELETE FROM learnerspace_2024_cart
 				WHERE user_email = '$user_email'
 			";
 	

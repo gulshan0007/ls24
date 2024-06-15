@@ -23,11 +23,11 @@ if (!$conn) {
 }
 
 // Query to select courses in the cart
-$select_query = "SELECT * FROM learnerspace_2023_cart WHERE user_email = '$user_email'";
+$select_query = "SELECT * FROM learnerspace_2024_cart WHERE user_email = '$user_email'";
 $result = mysqli_query($conn, $select_query);
 
 // Query to count the number of courses in the cart
-$count_query = "SELECT COUNT(*) FROM learnerspace_2023_cart WHERE user_email = '$user_email'";
+$count_query = "SELECT COUNT(*) FROM learnerspace_2024_cart WHERE user_email = '$user_email'";
 $N_CART = mysqli_query($conn, $count_query);
 $cart_rows = mysqli_fetch_array($N_CART);
 $total = $cart_rows[0];
