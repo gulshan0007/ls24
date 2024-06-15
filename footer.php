@@ -21,7 +21,7 @@
 		        <div class="col-md-4 text-center my-md-0 my-1" style="color: #fff">
 		            Created with
 		            &#10084;&#65039;
-		            by <strong style="color:#ff3f81">UGAC Web Team, 2024-2025</strong>
+		            by <strong style="color:#ff3f81">UGAC Web Team</strong> in collaboration with ITC , <strong style="color:#ff3f81">2024-2025</strong>
 
 		        </div>
 		        <!-- <div class="col-md-4 text-center my-md-0 my-1">

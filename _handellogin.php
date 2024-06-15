@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
            $_SESSION['user_gmail']=$email;
            echo "loged in".$email;
        }
-       header ("location: /Learners_Space24/index.php");
+       header ("location: /index.php");
     }
 }
 

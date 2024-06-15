@@ -21,7 +21,7 @@ else{
         $result=mysqli_query($conn,$sql);
         if($result){
             $showalert = true;
-            header ("location: /Learners_Space24/index.php?signupsuccess=true");
+            header ("location: /index.php?signupsuccess=true");
             exit();
         }
 

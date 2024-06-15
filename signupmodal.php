@@ -9,10 +9,19 @@
             <div class="modal-body">
                 <div class="signupform">
                     <form action="_handelsignup.php" method="post">
-                        <div class="mb-3 ">
-                            <label for="signupemail" class="form-label">Email</label>
-                            <input type="email" maxlength="25" class="form-control" id="signupemail" name="signupemail" aria-describedby="emailHelp" required>
-                        </div>
+                        
+                        <div class="mb-3">
+    <label for="signupemail" class="form-label">Roll Number</label>
+    <input type="text" maxlength="25" class="form-control" id="signupemail" name="signupemail" aria-describedby="emailHelp" required>
+</div>
+
+<script>
+    document.getElementById('signupemail').addEventListener('input', function (event) {
+        const input = event.target;
+        // Remove non-alphanumeric characters and convert to lowercase
+        input.value = input.value.replace(/[^a-z0-9]/gi, '').toLowerCase();
+    });
+</script>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password" required>

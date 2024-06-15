@@ -11,7 +11,7 @@
                     <form action="./_handellogin.php" method="post">
                         <div class="mb-3 ">
                             <label for="loginemail" class="form-label">User Email</label>
-                            <input type="email" class="form-control" id="loginemail" name="loginemail" aria-describedby="emailHelp" required>
+                            <input type="text" class="form-control" id="loginemail" name="loginemail" aria-describedby="emailHelp" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
