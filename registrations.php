@@ -30,7 +30,7 @@
         require 'functions.php';
 
         // LDAP of the user
-        $user_email = $_SESSION['ldap'];
+        $user_email = $_SESSION['user_email'];
 
         // Register all logic
         if(array_key_exists('register_all', $_POST)) {
@@ -50,12 +50,12 @@
         }
 
         $select_query = "
-    		SELECT * FROM learnerspace_2024_reg
+    		SELECT * FROM learnerspace_2024_reg1
     		WHERE user_email = '$user_email'
     		";
 
         $count_query = "
-        SELECT COUNT(*) FROM learnerspace_2024_reg
+        SELECT COUNT(*) FROM learnerspace_2024_reg1
         WHERE user_email = '$user_email'
         ";
 
@@ -94,7 +94,7 @@
                 <li class="list-group-item">
                   <div class="d-inline-block">
                     <?php
-                      echo '<b class="lead">'.$row["course_name"].'</b>' ;
+                      echo '<b class="lead" style="color: black;" > '.$row["course_name"].'</b>' ;
                       $course_code = $row["course_code"];
                     ?>
                   </div>
@@ -108,11 +108,11 @@
                        <!-- <a href="<?php echo htmlspecialchars('course_details.php?course_code='.$course_code); ?>" 
                        	class="btn btn-primary btn-sm">Details</a> -->
 
-                       <input 
+                       <!-- <input 
 	                       type="submit" 
 	                       name="<?php echo htmlspecialchars('remove_from_cart_'.$course_code); ?>"
 	                       class="btn btn-danger btn-sm" value="Deregister" 
-                       />
+                       /> -->
                     </form>
                   </div>
                 </li>
