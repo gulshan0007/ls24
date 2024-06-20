@@ -70,6 +70,14 @@ if(!isset($_SESSION))
                 <a class="btn btn-outline-light mx-2 my-md-0 my-1 dotted-border" href="course.php">Courses <i class="fas fa-book"></i></a>
             </li>
 
+
+            <li class="nav-item">
+                <a class="btn btn-outline-light mx-2 my-md-0 my-1 dotted-border" href="contact.php">Contact <i class="fas fa-book"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-light mx-2 my-md-0 my-1 dotted-border" href="faq.php">FAQs <i class="fas fa-book"></i></a>
+            </li>
+
             <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
                 <li class="nav-item">
                     <a class="btn btn-outline-light mx-2 my-md-0 my-1 dotted-border" href="cart.php">Your Cart <i class="fas fa-shopping-cart"></i></a>
