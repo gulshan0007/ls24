@@ -13,6 +13,13 @@
                             <label for="loginemail" class="form-label">Roll No</label>
                             <input type="text" class="form-control" id="loginemail" name="loginemail" aria-describedby="emailHelp" required>
                         </div>
+                        <script>
+    document.getElementById('loginemail').addEventListener('input', function (event) {
+        const input = event.target;
+        // Remove non-alphanumeric characters and convert to lowercase
+        input.value = input.value.replace(/[^a-z0-9]/gi, '').toLowerCase();
+    });
+</script>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password" required>
