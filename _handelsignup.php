@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['signupemail'])) {
         $mail->Host = 'smtp.gmail.com'; // SMTP server
         $mail->SMTPAuth = true;
         $mail->Username = 'gulshankumar060102@gmail.com'; // SMTP username
-        $mail->Password = 'tutraiufsgqfpfjf'; // SMTP password
+        $mail->Password = 'your_password'; // SMTP password
         $mail->SMTPSecure = 'tls'; // Enable TLS encryption
         $mail->Port = 587; // TCP port to connect to
 
@@ -84,6 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['signupemail'])) {
         $mail->send();
         echo 'OTP sent to ' . $signupemail . '@iitb.ac.in';
     } catch (Exception $e) {
+        error_log("Mailer Error: " . $mail->ErrorInfo);
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
     exit();
