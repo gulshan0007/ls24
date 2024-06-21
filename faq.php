@@ -414,7 +414,7 @@ if(!isset($_SESSION))
                 <div class="answer">
                     <hr />
                     <p>
-                        Registrations will be open till 11:59 PM,  1st July 2023
+                        Registrations will be open till 11:59 PM,  27th June 2024
                     </p>
                 </div>
             </div>
@@ -444,10 +444,8 @@ if(!isset($_SESSION))
                 <div class="answer">
                     <hr />
                     <ul>
-                        <li>Firstly please fill in the correct Email IDs and secondly please keep checking those at
-                            regular intervals, including the SPAM folder
-                        </li>
-                        <li>The MS Teams Code for the courses you have registered will be sent to you on your email ID by the end of registration. Please check your spam folder.
+                        
+                        <li>The MS Teams Code for the courses you have registered will be sent to you on your LDAP ID by the end of registration. Please check your spam folder.
                         
                         <li>Keep checking teams at constant intervals to get all the updates regarding your course.
                         </li>

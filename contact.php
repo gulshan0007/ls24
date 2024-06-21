@@ -165,6 +165,20 @@
                             <a href="./moderators.php?club=Finance Club" class="btn btn-outline-dark">Moderators</a>
                         </div>
                     </div>
+                    <div class="card mx-3 shadow" style="justify-content:space-between">
+                        <h5 class="card-title text-center text-dark mt-3"><strong>English Learning Program</strong>
+                        </h5>
+                        <img class="card-img-top" src="assets/img/clubs/elp.jpeg" alt="Card image cap">
+<!--                         <div class="card-body">
+
+
+                        </div> -->
+                        <div class="card-footer text-center">
+                            <p class="card-text text-center text-dark"></p>
+                            <a href="./moderators.php?club=Other Contributors"
+                                class="btn btn-outline-dark">Moderators</a>
+                        </div>
+                    </div>
                     <!-- <div class="card mx-3  shadow" style="justify-content:space-between">
                         <h5 class="card-title text-center text-dark mt-3"><strong>Web Team</strong></h5>
                         <img class="card-img-top" src="assets/img/clubs/wt.png" alt="Card image cap">
@@ -284,24 +298,7 @@
                 </div>
             </div>
 
-            <div class="row my-4">
-                <div class="col-md-4">
-                    <div class="card ml-3 shadow" style="justify-content:space-between">
-                        <h5 class="card-title text-center text-dark mt-3"><strong>Other Contributors</strong>
-                        </h5>
-                        <img class="card-img-top" src="assets/img/clubs/o.png" alt="Card image cap">
-<!--                         <div class="card-body">
-
-
-                        </div> -->
-                        <div class="card-footer text-center">
-                            <p class="card-text text-center text-dark"></p>
-                            <a href="./moderators.php?club=Other Contributors"
-                                class="btn btn-outline-dark">Moderators</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
 
 
 
