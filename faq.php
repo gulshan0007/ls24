@@ -316,6 +316,9 @@ if(!isset($_SESSION))
                     <hr />
                     <ul>
                     <li>
+                    This is only for the IIT Bombay students.
+                        </li>
+                    <li>
                     Click on Register and register using your Roll number and a password
                         </li>
                         <li>
