@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['signupemail'])) {
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        // $mail->isSMTP();
+        $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // SMTP server
         $mail->SMTPAuth = true;
         $mail->Username = 'gulshankumar060102@gmail.com'; // SMTP username
