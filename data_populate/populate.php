@@ -23,7 +23,7 @@ if (isset($_POST["upload_file"])) {
 
 			while (($getData = fgetcsv($courses_file)) !== FALSE) {
 
-				$sql = mysqli_query($conn, "INSERT INTO learnerspace_2022_courses(course_name,mod_brief,club_image,category,course_brief,course_desc,startdate,duration,timeline,hours,assignment,contact,certificate,prereq,course_code,image) VALUES('" . $getData[0] . "','" . $getData[1] . "', '" . $getData[2] . "', '" . $getData[3] . "', '" . $getData[4] . "', '" . $getData[5] . "', '" . $getData[6] . "', '" . $getData[7] . "', '" . $getData[8] . "', '" . $getData[9] . "', '" . $getData[10] . "', '" . $getData[11] . "', '" . $getData[12] . "', '" . $getData[13] . "', '" . $getData[14] . "', '" . $getData[15] . "')");
+				$sql = mysqli_query($conn, "INSERT INTO learnerspace_2024_courses(course_name,mod_brief,club_image,category,course_brief,course_desc,startdate,duration,timeline,hours,assignment,contact,certificate,prereq,course_code,image) VALUES('" . $getData[0] . "','" . $getData[1] . "', '" . $getData[2] . "', '" . $getData[3] . "', '" . $getData[4] . "', '" . $getData[5] . "', '" . $getData[6] . "', '" . $getData[7] . "', '" . $getData[8] . "', '" . $getData[9] . "', '" . $getData[10] . "', '" . $getData[11] . "', '" . $getData[12] . "', '" . $getData[13] . "', '" . $getData[14] . "', '" . $getData[15] . "')");
 
 				if (!isset($sql)) {
 
@@ -40,7 +40,7 @@ if (isset($_POST["upload_file"])) {
 			
 			while (($getData = fgetcsv($moderators_file)) !== FALSE) {
 
-				$sql = mysqli_query($conn, "INSERT INTO learnerspace_2022_contact(club,category,photo,name,phone,email,fb) VALUES('" . $getData[0] . "','" . $getData[1] . "', '" . $getData[2] . "', '" . $getData[3] . "', '" . $getData[4] . "', '" . $getData[5] . "', '" . $getData[6] . "')");
+				$sql = mysqli_query($conn, "INSERT INTO learnerspace_2024_contact(club,name,phone,email) VALUES('" . $getData[0] . "','" . $getData[1] . "', '" . $getData[2] . "', '" . $getData[3] . "')");
 
 				if (!isset($sql)) {
 

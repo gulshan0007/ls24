@@ -316,26 +316,20 @@ if(!isset($_SESSION))
                     <hr />
                     <ul>
                     <li>
-                        First Login with your IITB LDAP Email Id via SSO using the Login button at the top-right corner of the page.
-                        Please note that you cannot register for the courses unless you are logged in.
+                    Click on Register and register using your Roll number and a password
                         </li>
                         <li>
-                            Go to the “Courses” tab. Choose between the TSS and NTSS tabs and click on the details
-                            button on any course placard. You will then be directed to that course page.
+                        Once registered, go to log in and use the same roll number and password to log in to the site
                         </li>
                         <li>
-                            For each course you have "Add to cart" option. You can click on that to add that course to cart.
-                        </li>
+                        Once you log in, you can go to courses, choose TSS or NTSS and then browse through courses
                         <li>
-                            Add as many courses you wish to your cart, and then click on the "Your Cart" button present
-                            above to register for all the courses you have selected.
+                        To join a course, press 'add to cart' on the courses you want to register for
                         </li>
-                        <li>Please wait till the registration deadline is completed. Once deadline is passed you will get a mail
-                            regarding the MS Teams Code for all the courses that you have registered.
+                        <li>To continue browsing, just exit the registrations page and go to courses where you can repeat the process.
                         </li>
-                        <li>You can see all the successfully registered courses in the “Your Registrations” tab.
+                        <li>To confirm registration, just press 'register for all' and you will be registered for the course. An email to the course Teams will be sent to you shortly on your IITB Webmail.
                         </li>
-                        <li>Keep checking the LDAP email ID that you submit at regular intervals, including the SPAM folder</li>
                     </ul>
                 </div>
             </div>

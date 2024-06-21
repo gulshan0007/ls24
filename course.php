@@ -118,13 +118,12 @@
 }
 
 .card1 {
-  margin-right:15px;
+  margin-right: 15px;
   height: 100%;
   width: 100%;
   transition: transform 1500ms;
   transform-style: preserve-3d;
 }
-
 
 .card2 {
   height: 100%;
@@ -141,17 +140,19 @@
   box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
   position: absolute;
   backface-visibility: hidden;
+  background-size: cover; /* Add this line */
+  background-position: center; /* Add this line */
 }
 
-.card1 .front .back a:hover{
-    width:50px;
-    height:20px;
-    background-color: #ff3f81;
-    color:white;
+.card1 .front .back a:hover {
+  width: 50px;
+  height: 20px;
+  background-color: #ff3f81;
+  color: white;
 }
 
 .card1 .front {
-  background-image: url('assets/img/TSS.jpg');
+  background-image: url('assets/img/tss.jpeg');
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +160,7 @@
 }
 
 .card1 .back {
- background-image: url('assets/img/TSS.jpg');
+  background-image: url('assets/img/tss.jpeg');
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -169,7 +170,7 @@
 }
 
 .card2 .front {
-  background-image: url('assets/img/NTSS.jpg');
+  background-image: url('assets/img/ntss.jpeg');
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +178,7 @@
 }
 
 .card2 .back {
- background-image: url('assets/img/NTSS.jpg');
+  background-image: url('assets/img/ntss.jpeg');
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;

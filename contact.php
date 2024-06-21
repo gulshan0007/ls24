@@ -165,18 +165,14 @@
                             <a href="./moderators.php?club=Finance Club" class="btn btn-outline-dark">Moderators</a>
                         </div>
                     </div>
-                    <div class="card mx-3  shadow" style="justify-content:space-between">
+                    <!-- <div class="card mx-3  shadow" style="justify-content:space-between">
                         <h5 class="card-title text-center text-dark mt-3"><strong>Web Team</strong></h5>
                         <img class="card-img-top" src="assets/img/clubs/wt.png" alt="Card image cap">
-<!--                         <div class="card-body">
-
-
-                        </div> -->
                         <div class="card-footer text-center">
                             <p class="card-text text-center text-dark">Undergraduate Academic Council</p>
                             <a href="./moderators.php?club=Web Team" class="btn btn-outline-dark">Moderators</a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="card mx-3  shadow">
                         <h5 class="card-title text-center text-dark mt-3"><strong>Design Team</strong></h5>
                         <img class="card-img-top" src="assets/img/clubs/dt.jpg" alt="Card image cap">
