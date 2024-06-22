@@ -259,7 +259,7 @@
                 <div class="card-group">
                     <div class="card mx-3  shadow" style="justify-content:space-between">
                         <h5 class="card-title text-center text-dark mt-3"><strong>Krittika</strong></h5>
-                        <img class="card-img-top" src="assets/img/clubs/krittika.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/clubs/kritika.jpeg" alt="Card image cap">
 <!--                         <div class="card-body">
 
 
