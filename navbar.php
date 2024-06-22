@@ -50,7 +50,7 @@ if(!isset($_SESSION))
     }
 
     .navbar-toggler {
-        background-color: white !important;
+        background-color: #ff3f81 !important;
         border-color: red !important;
         color: white !important;
     }
