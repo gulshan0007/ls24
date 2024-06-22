@@ -57,7 +57,7 @@ if(!isset($_SESSION))
 
     .navbar-toggler-icon {
         color: #0a0a0a !important;
-        font-size: 28px !important;
+        font-size: 15px !important;
     }
 }
 
