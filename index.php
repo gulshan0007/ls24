@@ -488,10 +488,10 @@ if (isset($_GET['loginsuccess']) && $_GET['loginsuccess'] == "false") {
                         
                     </div>
                     <p class="">
-                        Learners Space is an online platform with a set of diverse courses for you to start exploring
+                        Learners' Space is an online platform with a set of diverse courses for you to start exploring
                         various topics. We bring to you a plethora of courses, all made with utmost attention to help
                         serve you the best!<br>
-                        In this 8th edition of Learners Space, we have courses from <strong>TSS(Technical Summer School)
+                        In this 8th edition of Learners' Space, we have courses from <strong>TSS(Technical Summer School)
                         </strong>and <strong>NTSS(Non-Technical Summer School)</strong>. The course will be spread out
                         over a few weeks, each week building your skills even more. Go through the courses section of
                         the website to explore the topics in detail. We have received an enormous amount of
