@@ -204,7 +204,7 @@
         <h1>TSS</h1>
       </div>
       <div class="back">
-      <a class="btn btn-outline-light  mx-2 my-md-0 my-1 dotted-border" style="width:50%;height:7%;" href="tss.php">View Courses<i class="fas fa-home"></i></a>
+      <a class="btn btn-outline-light  mx-2 my-2 dotted-border" style="width:50%;height:8%; " href="tss.php">View Courses<i class="fas fa-home"></i></a>
       </div>
     </div>
     <div class="card2">
@@ -212,7 +212,7 @@
         <h1>NTSS</h1>
       </div>
       <div class="back">
-      <a class="btn btn-outline-light  mx-2 my-md-0 my-1 dotted-border" style="width:50%;height:7% " href="ntss.php">View Courses <i class="fas fa-home"></i></a>
+      <a class="btn btn-outline-light  mx-2 my-md-0 my-1 dotted-border" style="width:50%;height:8% " href="ntss.php">View Courses <i class="fas fa-home"></i></a>
       </div>
     </div>
   </div>
