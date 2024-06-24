@@ -118,28 +118,27 @@
 	function removeFromReg($course_code, $user_email){
 		// Connecting to the database
 		include 'config/dbconnect.php';
-
+	
 		// Check connection
 		if (!$conn) {
-		  die("Connection failed: ".mysqli_connect_error());
+			die("Connection failed: ".mysqli_connect_error());
 		}
-
+	
 		$delete_query = "
-		DELETE FROM learnerspace_2024_reg
+		DELETE FROM learnerspace_2024_reg1
 		WHERE course_code = '$course_code' AND user_email = '$user_email'
 		";
-
+	
 		// Success/Failure message
 		if (mysqli_query($conn, $delete_query)) {
 			echo 'Removed successfully';
-			/*header("Location: cart.php?message=removed_successfully");
-			exit();*/
 		} else {
-		  echo "Something's not right. Error: ".mysqli_error($conn);
+			echo "Something's not right. Error: ".mysqli_error($conn);
 		}
-
+	
 		mysqli_close($conn);
 	}
+	
 
 	// Function to register a particular course
 	function registerCourse( $user_email, $user_gmail,  $course_name, $course_code){
