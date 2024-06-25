@@ -9,7 +9,7 @@
             <div class="modal-body">
                 <div class="loginform">
                     <form action="./_handellogin.php" method="post">
-                        <div class="mb-3 ">
+                        <div class="mb-3">
                             <label for="loginemail" class="form-label">Roll No</label>
                             <input type="text" class="form-control" id="loginemail" name="loginemail" aria-describedby="emailHelp" required>
                         </div>
@@ -19,6 +19,9 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Login</button>
                     </form>
+                    <div class="mt-3">
+                        <a href="./_handleForgotPassword.php" class="text-danger">Forgot Password?</a>
+                    </div>
                 </div>
             </div>
         </div>
