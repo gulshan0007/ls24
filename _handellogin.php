@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
 include 'db_connect.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email=$_POST['loginemail'];
     $password=$_POST['password'];
 
       
-    //  validate user email 
+  
     $sql="SELECT * FROM `learnerspace_2024_reg` WHERE user_email='$email'";
     $result=mysqli_query($conn ,$sql);
     $numRows=mysqli_num_rows($result);
@@ -24,4 +24,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-?>
+?> -->

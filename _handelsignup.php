@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 include 'db_connect.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $user_email=$_POST['signupemail'];
@@ -32,4 +32,4 @@ else{
     }
   header ("location: '/Learners_Space24/index.php?signupsuccess=false&error=$showError");
     }
-?>
+?> -->

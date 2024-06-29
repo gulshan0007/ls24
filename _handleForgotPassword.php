@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 include 'db_connect.php';
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Display a form to enter the email for which the password is forgotten
@@ -45,4 +45,4 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
               </div>';
     }
 }
-?>
+?> -->

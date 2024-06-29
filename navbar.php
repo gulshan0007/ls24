@@ -115,7 +115,7 @@ if(!isset($_SESSION)) {
                     <a class="btn btn-outline-light mx-2 my-md-0 my-1 dotted-border" href="faq.php">FAQs</a>
                 </li>
 
-                <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
+                <!-- <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
                     <li class="nav-item">
                         <a class="btn btn-outline-light mx-2 my-md-0 my-1 dotted-border" href="cart.php">Your Cart</a>
                     </li>
@@ -134,7 +134,7 @@ if(!isset($_SESSION)) {
                     <li class="nav-item">
                         <a class="btn btn-outline-light mx-2 my-md-0 my-1 dotted-border" href="#" data-toggle="modal" data-target="#signupmodal">Register</a>
                     </li>
-                <?php } ?>
+                <?php } ?> -->
             </ul>
         </div>
     </div>
